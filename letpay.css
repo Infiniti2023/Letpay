@@ -12,6 +12,7 @@ body {
     color:#ffffff;
     letter-spacing:-0.2px;
     min-height:100vh;
+    max-width:100%;
 }
 
 /* Tag Selector */
@@ -95,7 +96,7 @@ img{
 .foot{
     color:#fffff;
     display:flex;
-    justify-content:space-between;
+    justify-content: center;
     align-items:center;
     }
 
@@ -125,18 +126,20 @@ img{
 }
 
 .hero{
-  width: 375px;
+  width: 340px;
   max-width: 680px; 
-  margin-left:20px;
-  margin-right:20px;
-  display: block;
   border-radius:20px;
-  margin-bottom:30px;
+}
+.hero-container{
+    margin:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .find{
 font-size:26px;
 font-weight:600;
-   text-align:center;
+text-align: center;
    background:#E3F2FD;
    margin-top:50px;
    padding-top:20px;
@@ -147,11 +150,8 @@ font-weight:600;
     font-weight:400;
     
 }
-
-.second{
-    text-align:center;
-}
 .btn{
+cursor:pointer;
 display: inline-block;
     padding-right:100px;
     padding-left:100px;
@@ -176,6 +176,7 @@ display: inline-block;
     color:#0369A1;
     padding-right:30px;
     padding-left:30px;
+    cursor:pointer;
 }
 
 .btn-comp{
@@ -188,12 +189,31 @@ display: inline-block;
     color:#0369A1;
     padding-top:10px;
     padding-bottom:10px;
+    cursor:pointer;
+    transition: 0.2s;
+    
 }
 
 .third{
     color:#0369A1;
 }
 
+
+/* Pseudo selector*/
+.btn-primary:hover,active{
+    background:#0369A1;
+    transition: background 0.2s;
+}
+
+.btn-secondary:active{
+    background:#00b4db;
+    transition: background 0.2s;
+}
+
+.btn-tetiary:active{
+    background:#00b4db;
+    transition: background 0.2s;
+}
 /* Media Query */
 /* Desktop */
 @media (min-width: 1024px) {
@@ -201,4 +221,21 @@ display: inline-block;
   .sub{
       display:flex;
   }
-}
+  
+  .sign{
+      display:flex;
+      justify-content:left;
+      align-items:left;
+  }
+  
+  .find{
+      text-align:start;
+      display:flex;
+      flex-direction: column;
+  }
+  .foot{
+      justify-content:flex-start;
+  }
+  
+      }
+    
