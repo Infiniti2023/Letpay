@@ -124,6 +124,7 @@ img{
 
 .pro{
     color:#ffffff;
+    text-align:center;
     
 }
 
@@ -238,6 +239,10 @@ display: inline-block;
   .foot{
       justify-content:flex-start;
   }
+    .pro{
+    display:flex;
+    justify-content:flex-start;
+    }
   
       }
     
